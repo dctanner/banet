@@ -15,7 +15,8 @@ libhdf4-dev is required for pyhdf to read .hdf4 files.
 `pip install banet`
 
 ## Setup ladsweb
-To create an account and an authentication token visit ladsweb website and save the following config file with your email and key at `~/.ladsweb`.
+Visit the [ladsweb website](https://urs.earthdata.nasa.gov) and register. To find your Authorization Bearer token, goto https://ladsweb.modaps.eosdis.nasa.gov/archive/ and click Login > Generate Token and copy the token (do not use the tokens at https://urs.earthdata.nasa.gov/users/dctanner/user_tokens as these are different and will not work). Create the following config file at `~/.ladsweb`, inserting your email and the token under "key".
+
 ```bash
 {
     "url"   : "https://ladsweb.modaps.eosdis.nasa.gov",

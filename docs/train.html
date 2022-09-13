@@ -28,20 +28,20 @@ nb_path: "nbs/05_train.ipynb"
 
 </div>
     {% endraw %}
-# export
+<p># export
 import fastai
 from fastai.vision import *
 from fastai.callbacks import *
 import scipy.io as sio
 import sys
 
-from banet.models import BA_Net
+from banet.models import BA_Net</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Callbacks">Callbacks<a class="anchor-link" href="#Callbacks"> </a></h1>
 </div>
 </div>
-</div># export
+</div><p># export
 class SampleEpisode(Sampler):
     def __init__(self, data_source, n_episodes, sequence_len, n_sequences, info_df, nburned=100):
         self.ds, self.epoch_size = data_source, n_episodes
@@ -66,8 +66,8 @@ class SampleEpisode(Sampler):
         """Get indices for one mini-batch"""
         idx = []
         n = 0
-        while n < self.n_sequences:
-            k = np.random.choice(self.df.loc[self.df.ba>self.nburned].index, size=1, replace=False)[0]
+        while n &lt; self.n_sequences:
+            k = np.random.choice(self.df.loc[self.df.ba&gt;self.nburned].index, size=1, replace=False)[0]
             s = self.random_sample(k)
             if s is not None:
                 idx = [*idx, *s]
@@ -77,18 +77,18 @@ class SampleEpisode(Sampler):
     def random_sample(self, k):
         """Random samples are n-way k-shot"""
         idx = []
-        condition = ((self.df.name == self.df.loc[k, 'name']) &
-            (self.df.time == self.df.loc[k, 'time'] + pd.Timedelta(days=self.sequence_len)) &
-            (self.df.r == self.df.loc[k, 'r']) &
+        condition = ((self.df.name == self.df.loc[k, 'name']) &amp;
+            (self.df.time == self.df.loc[k, 'time'] + pd.Timedelta(days=self.sequence_len)) &amp;
+            (self.df.r == self.df.loc[k, 'r']) &amp;
             (self.df.c == self.df.loc[k, 'c']))
         where = self.df.loc[condition].index.values
         if len(where) == 0:
             idx = None
         else:
             times = pd.date_range(self.df.loc[k-self.sequence_len//2, 'time'], periods=2*self.sequence_len, freq='D')
-            condition = ((self.df.name == self.df.loc[k, 'name']) &
-                (self.df.time.isin(times)) &
-                (self.df.r == self.df.loc[k, 'r']) &
+            condition = ((self.df.name == self.df.loc[k, 'name']) &amp;
+                (self.df.time.isin(times)) &amp;
+                (self.df.r == self.df.loc[k, 'r']) &amp;
                 (self.df.c == self.df.loc[k, 'c']))
             where = self.df.loc[condition].sort_values(by='time').index.values
             idx = where[:self.sequence_len]
@@ -105,7 +105,7 @@ class ImageSequence(LearnerCallback):
         bs, ch, sz1, sz2 = last_input.size()
         last_input = last_input.view(self.sequence_len, self.n_sequences, ch, sz1, sz2).permute(1, 2, 0, 3, 4)
         last_target = last_target.view(self.sequence_len, self.n_sequences, 1, sz1, sz2).permute(1, 2, 0, 3, 4)#.max(2)[0]
-        return {'last_input': last_input, 'last_target': last_target}# export
+        return {'last_input': last_input, 'last_target': last_target}</p><p># export
 def get_y_fn(file, satellite='VIIRS750', target_product='MCD64A1C6'):
     f = str(Path(str(file))).replace('images', 'masks')
     f = f.replace(satellite, target_product)
@@ -185,21 +185,21 @@ class BCE(Module):
         bce = nn.BCEWithLogitsLoss()
         return 100*bce(x.view(x.size()[0],-1),y.view(y.size()[0], -1))
 
-def accuracy(input:Tensor, targs:Tensor, thr:int=0.5)->Rank0Tensor:
+def accuracy(input:Tensor, targs:Tensor, thr:int=0.5)-&gt;Rank0Tensor:
     "Compute accuracy with `targs` when `input` is bs * n_classes."
-    input = (input.sigmoid()>thr).long()
-    targs = (targs>thr).long()
+    input = (input.sigmoid()&gt;thr).long()
+    targs = (targs&gt;thr).long()
     return (input==targs).float().mean()
 
 def dice2d(pred, targs, thr=0.5):
     pred = pred.squeeze()
     targs = targs.squeeze().sum(0)
-    pred = (pred.sigmoid().sum(0)>thr).float()
-    targs = (targs>thr).float()
+    pred = (pred.sigmoid().sum(0)&gt;thr).float()
+    targs = (targs&gt;thr).float()
     return 2. * (pred*targs).sum() / (pred+targs).sum()
 
 def mae(pred, targs, thr=0.5):
-    a = pred.squeeze().sigmoid().sum(0)>thr
+    a = pred.squeeze().sigmoid().sum(0)&gt;thr
     pred = pred.squeeze().max(0)[1]
     targs = targs.squeeze().max(0)[1]
     pred = pred[a.byte()]
@@ -275,7 +275,7 @@ def train_model(val_year, r_fold, path, model_path, n_epochs=8, lr=1e-2, nburned
     learn.fit_one_cycle(n_epochs, lr)
     model_path.mkdir(exist_ok=True)
     torch.save(learn.model.state_dict(), model_path/f'banet-val{val_year}-fold{r_fold}-test.pth')
-    print(f'Completed! banet-val{val_year}-fold{r_fold}-test.pth saved to {model_path}.')
+    print(f'Completed! banet-val{val_year}-fold{r_fold}-test.pth saved to {model_path}.')</p>
 </div>
- 
+
 

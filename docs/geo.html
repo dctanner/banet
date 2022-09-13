@@ -46,8 +46,11 @@ nb_path: "nbs/01_geo.ipynb"
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="Region" class="doc_header"><code>class</code> <code>Region</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L27" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Region</code>(<strong><code>name</code></strong>:<code>str</code>, <strong><code>bbox</code></strong>:<code>list</code>, <strong><code>pixel_size</code></strong>:<code>float</code>, <strong><code>epsg</code></strong>:<code>int</code>=<em><code>4326</code></em>, <strong><code>shape</code></strong>=<em><code>None</code></em>)</p>
+<h2 id="Region" class="doc_header"><code>class</code> <code>Region</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L28" class="source_link" style="float:right">[source]</a></h2>
+<blockquote>
+<p><code>Region</code>(<strong><code>name</code></strong>:<code>str</code>, <strong><code>bbox</code></strong>:<code>list</code>, <strong><code>pixel_size</code></strong>:<code>float</code>, <strong><code>epsg</code></strong>:<code>int</code>=<em><code>4326</code></em>, <strong><code>shape</code></strong>=<em><code>None</code></em>)</p>
 </blockquote>
 <p>Defines a geographical region with a name, a bounding box and the pixel size</p>
 
@@ -78,8 +81,10 @@ nb_path: "nbs/01_geo.ipynb"
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="Region.width" class="doc_header"><code>Region.width</code><a href="" class="source_link" style="float:right">[source]</a></h4><p>Width of the region</p>
+<h4 id="Region.width" class="doc_header"><code>Region.width</code><a href="" class="source_link" style="float:right">[source]</a></h4>
+<p>Width of the region</p>
 
 </div>
 
@@ -88,8 +93,10 @@ nb_path: "nbs/01_geo.ipynb"
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="Region.height" class="doc_header"><code>Region.height</code><a href="" class="source_link" style="float:right">[source]</a></h4><p>Height of the region</p>
+<h4 id="Region.height" class="doc_header"><code>Region.height</code><a href="" class="source_link" style="float:right">[source]</a></h4>
+<p>Height of the region</p>
 
 </div>
 
@@ -98,8 +105,10 @@ nb_path: "nbs/01_geo.ipynb"
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="Region.transform" class="doc_header"><code>Region.transform</code><a href="" class="source_link" style="float:right">[source]</a></h4><p>Rasterio Affine transform of the region</p>
+<h4 id="Region.transform" class="doc_header"><code>Region.transform</code><a href="" class="source_link" style="float:right">[source]</a></h4>
+<p>Rasterio Affine transform of the region</p>
 
 </div>
 
@@ -108,8 +117,10 @@ nb_path: "nbs/01_geo.ipynb"
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="Region.shape" class="doc_header"><code>Region.shape</code><a href="" class="source_link" style="float:right">[source]</a></h4><p>Shape of the region (height, width)</p>
+<h4 id="Region.shape" class="doc_header"><code>Region.shape</code><a href="" class="source_link" style="float:right">[source]</a></h4>
+<p>Shape of the region (height, width)</p>
 
 </div>
 
@@ -118,8 +129,11 @@ nb_path: "nbs/01_geo.ipynb"
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="Region.coords" class="doc_header"><code>Region.coords</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L67" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Region.coords</code>(<strong><code>offset</code></strong>=<em><code>'ul'</code></em>)</p>
+<h4 id="Region.coords" class="doc_header"><code>Region.coords</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L67" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>Region.coords</code>(<strong><code>offset</code></strong>=<em><code>'ul'</code></em>)</p>
 </blockquote>
 <p>Computes longitude and latitude arrays given a shape and a rasterio Affine transform</p>
 
@@ -130,8 +144,11 @@ nb_path: "nbs/01_geo.ipynb"
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="Region.export" class="doc_header"><code>Region.export</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L90" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Region.export</code>(<strong><code>file</code></strong>)</p>
+<h4 id="Region.export" class="doc_header"><code>Region.export</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L90" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>Region.export</code>(<strong><code>file</code></strong>)</p>
 </blockquote>
 <p>Exports region information to json file</p>
 
@@ -142,8 +159,11 @@ nb_path: "nbs/01_geo.ipynb"
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="Region.load" class="doc_header"><code>Region.load</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L74" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Region.load</code>(<strong><code>file</code></strong>)</p>
+<h4 id="Region.load" class="doc_header"><code>Region.load</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L74" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>Region.load</code>(<strong><code>file</code></strong>)</p>
 </blockquote>
 <p>Loads region information from json file</p>
 
@@ -154,8 +174,11 @@ nb_path: "nbs/01_geo.ipynb"
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="Region.new" class="doc_header"><code>Region.new</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L81" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Region.new</code>(<strong><code>name</code></strong>:<code>str</code>=<em><code>None</code></em>, <strong><code>bbox</code></strong>:<code>list</code>=<em><code>None</code></em>, <strong><code>pixel_size</code></strong>:<code>float</code>=<em><code>None</code></em>, <strong><code>epsg</code></strong>:<code>int</code>=<em><code>None</code></em>, <strong><code>shape</code></strong>:<code>tuple</code>=<em><code>None</code></em>)</p>
+<h4 id="Region.new" class="doc_header"><code>Region.new</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L81" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>Region.new</code>(<strong><code>name</code></strong>:<code>str</code>=<em><code>None</code></em>, <strong><code>bbox</code></strong>:<code>list</code>=<em><code>None</code></em>, <strong><code>pixel_size</code></strong>:<code>float</code>=<em><code>None</code></em>, <strong><code>epsg</code></strong>:<code>int</code>=<em><code>None</code></em>, <strong><code>shape</code></strong>:<code>tuple</code>=<em><code>None</code></em>)</p>
 </blockquote>
 <p>Create new region with updated parameters.</p>
 
@@ -172,16 +195,16 @@ nb_path: "nbs/01_geo.ipynb"
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>These are the 5 regions used in the article:</p>
-<div class="highlight"><pre><span></span><span class="err">//R_CA.json</span>
-<span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;CA&quot;</span><span class="p">,</span> <span class="nt">&quot;bbox&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">-125</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">-113</span><span class="p">,</span> <span class="mi">43</span><span class="p">],</span> <span class="nt">&quot;pixel_size&quot;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">}</span>
-<span class="err">//R_PT.json</span>
-<span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;PT&quot;</span><span class="p">,</span> <span class="nt">&quot;bbox&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">-10</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">-6</span><span class="p">,</span> <span class="mi">44</span><span class="p">],</span> <span class="nt">&quot;pixel_size&quot;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">}</span>
-<span class="err">//R_BR.json</span>
-<span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;BR&quot;</span><span class="p">,</span> <span class="nt">&quot;bbox&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">-58</span><span class="p">,</span> <span class="mi">-20</span><span class="p">,</span> <span class="mi">-44</span><span class="p">,</span> <span class="mi">-5</span><span class="p">],</span> <span class="nt">&quot;pixel_size&quot;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">}</span>
-<span class="err">//R_MZ.json</span>
-<span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;MZ&quot;</span><span class="p">,</span> <span class="nt">&quot;bbox&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">-27</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">-10</span><span class="p">],</span> <span class="nt">&quot;pixel_size&quot;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">}</span>
-<span class="err">//R_AU.json</span>
-<span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;AU&quot;</span><span class="p">,</span> <span class="nt">&quot;bbox&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">113</span><span class="p">,</span> <span class="mi">-27</span><span class="p">,</span> <span class="mi">154</span><span class="p">,</span> <span class="mi">-10</span><span class="p">],</span> <span class="nt">&quot;pixel_size&quot;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><span class="c1">//R_CA.json</span><span class="w"></span>
+<span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CA&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;bbox&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">-125</span><span class="p">,</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="mi">-113</span><span class="p">,</span><span class="w"> </span><span class="mi">43</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;pixel_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.01</span><span class="p">}</span><span class="w"></span>
+<span class="c1">//R_PT.json</span><span class="w"></span>
+<span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PT&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;bbox&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">-10</span><span class="p">,</span><span class="w"> </span><span class="mi">36</span><span class="p">,</span><span class="w"> </span><span class="mi">-6</span><span class="p">,</span><span class="w"> </span><span class="mi">44</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;pixel_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.01</span><span class="p">}</span><span class="w"></span>
+<span class="c1">//R_BR.json</span><span class="w"></span>
+<span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BR&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;bbox&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">-58</span><span class="p">,</span><span class="w"> </span><span class="mi">-20</span><span class="p">,</span><span class="w"> </span><span class="mi">-44</span><span class="p">,</span><span class="w"> </span><span class="mi">-5</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;pixel_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.01</span><span class="p">}</span><span class="w"></span>
+<span class="c1">//R_MZ.json</span><span class="w"></span>
+<span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MZ&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;bbox&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">-27</span><span class="p">,</span><span class="w"> </span><span class="mi">41</span><span class="p">,</span><span class="w"> </span><span class="mi">-10</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;pixel_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.01</span><span class="p">}</span><span class="w"></span>
+<span class="c1">//R_AU.json</span><span class="w"></span>
+<span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AU&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;bbox&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">113</span><span class="p">,</span><span class="w"> </span><span class="mi">-27</span><span class="p">,</span><span class="w"> </span><span class="mi">154</span><span class="p">,</span><span class="w"> </span><span class="mi">-10</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;pixel_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.01</span><span class="p">}</span><span class="w"></span>
 </pre></div>
 
 </div>
@@ -201,7 +224,7 @@ nb_path: "nbs/01_geo.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">Region</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;PI&#39;</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">44</span><span class="p">],</span> <span class="n">pixel_size</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">Region</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'PI'</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">44</span><span class="p">],</span> <span class="n">pixel_size</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
 <span class="n">r</span>
 </pre></div>
 
@@ -246,6 +269,21 @@ _shape: None</pre>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/home/mnpinto/anaconda3/envs/fastai/lib/python3.8/site-packages/pyproj/crs/crs.py:1256: UserWarning: You will likely lose important projection information when converting to a PROJ string from another format. See: https://proj.org/faq.html#what-is-the-best-format-for-describing-coordinate-reference-systems
+  return self._crs.to_proj4(version=version)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -265,6 +303,17 @@ _shape: None</pre>
 
 <div class="output_wrapper">
 <div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/home/mnpinto/anaconda3/envs/fastai/lib/python3.8/site-packages/pyproj/crs/crs.py:1256: UserWarning: You will likely lose important projection information when converting to a PROJ string from another format. See: https://proj.org/faq.html#what-is-the-best-format-for-describing-coordinate-reference-systems
+  return self._crs.to_proj4(version=version)
+/home/mnpinto/anaconda3/envs/fastai/lib/python3.8/site-packages/pyproj/crs/crs.py:1256: UserWarning: You will likely lose important projection information when converting to a PROJ string from another format. See: https://proj.org/faq.html#what-is-the-best-format-for-describing-coordinate-reference-systems
+  return self._crs.to_proj4(version=version)
+</pre>
+</div>
+</div>
 
 <div class="output_area">
 
@@ -297,6 +346,23 @@ _shape: None</pre>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/home/mnpinto/anaconda3/envs/fastai/lib/python3.8/site-packages/pyproj/crs/crs.py:1256: UserWarning: You will likely lose important projection information when converting to a PROJ string from another format. See: https://proj.org/faq.html#what-is-the-best-format-for-describing-coordinate-reference-systems
+  return self._crs.to_proj4(version=version)
+/home/mnpinto/anaconda3/envs/fastai/lib/python3.8/site-packages/pyproj/crs/crs.py:1256: UserWarning: You will likely lose important projection information when converting to a PROJ string from another format. See: https://proj.org/faq.html#what-is-the-best-format-for-describing-coordinate-reference-systems
+  return self._crs.to_proj4(version=version)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -317,6 +383,23 @@ _shape: None</pre>
 
 <div class="output_wrapper">
 <div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/home/mnpinto/anaconda3/envs/fastai/lib/python3.8/site-packages/pyproj/crs/crs.py:1256: UserWarning: You will likely lose important projection information when converting to a PROJ string from another format. See: https://proj.org/faq.html#what-is-the-best-format-for-describing-coordinate-reference-systems
+  return self._crs.to_proj4(version=version)
+/home/mnpinto/anaconda3/envs/fastai/lib/python3.8/site-packages/pyproj/crs/crs.py:1256: UserWarning: You will likely lose important projection information when converting to a PROJ string from another format. See: https://proj.org/faq.html#what-is-the-best-format-for-describing-coordinate-reference-systems
+  return self._crs.to_proj4(version=version)
+/home/mnpinto/anaconda3/envs/fastai/lib/python3.8/site-packages/pyproj/crs/crs.py:1256: UserWarning: You will likely lose important projection information when converting to a PROJ string from another format. See: https://proj.org/faq.html#what-is-the-best-format-for-describing-coordinate-reference-systems
+  return self._crs.to_proj4(version=version)
+/home/mnpinto/anaconda3/envs/fastai/lib/python3.8/site-packages/pyproj/crs/crs.py:1256: UserWarning: You will likely lose important projection information when converting to a PROJ string from another format. See: https://proj.org/faq.html#what-is-the-best-format-for-describing-coordinate-reference-systems
+  return self._crs.to_proj4(version=version)
+/home/mnpinto/anaconda3/envs/fastai/lib/python3.8/site-packages/pyproj/crs/crs.py:1256: UserWarning: You will likely lose important projection information when converting to a PROJ string from another format. See: https://proj.org/faq.html#what-is-the-best-format-for-describing-coordinate-reference-systems
+  return self._crs.to_proj4(version=version)
+</pre>
+</div>
+</div>
 
 <div class="output_area">
 
@@ -387,8 +470,11 @@ _shape: None</pre>
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="open_shp" class="doc_header"><code>open_shp</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L98" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>open_shp</code>(<strong><code>file</code></strong>)</p>
+<h4 id="open_shp" class="doc_header"><code>open_shp</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L98" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>open_shp</code>(<strong><code>file</code></strong>)</p>
 </blockquote>
 <p>Read shapefile</p>
 
@@ -412,8 +498,11 @@ _shape: None</pre>
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="open_tif" class="doc_header"><code>open_tif</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L102" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>open_tif</code>(<strong><code>file</code></strong>)</p>
+<h4 id="open_tif" class="doc_header"><code>open_tif</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L102" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>open_tif</code>(<strong><code>file</code></strong>)</p>
 </blockquote>
 <p>Read tiff</p>
 
@@ -437,8 +526,11 @@ _shape: None</pre>
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="bounds_from_shapefile" class="doc_header"><code>bounds_from_shapefile</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L106" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>bounds_from_shapefile</code>(<strong><code>shapefile</code></strong>)</p>
+<h4 id="bounds_from_shapefile" class="doc_header"><code>bounds_from_shapefile</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L106" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>bounds_from_shapefile</code>(<strong><code>shapefile</code></strong>)</p>
 </blockquote>
 <p>Computes bounding box for shapefile</p>
 
@@ -462,8 +554,11 @@ _shape: None</pre>
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="size_from_bounds" class="doc_header"><code>size_from_bounds</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L111" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>size_from_bounds</code>(<strong><code>bounds</code></strong>, <strong><code>resolution</code></strong>)</p>
+<h4 id="size_from_bounds" class="doc_header"><code>size_from_bounds</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L111" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>size_from_bounds</code>(<strong><code>bounds</code></strong>, <strong><code>resolution</code></strong>)</p>
 </blockquote>
 <p>Computes width and height from bounds for a given pixel resolution</p>
 
@@ -487,8 +582,11 @@ _shape: None</pre>
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="size_resolution_assert" class="doc_header"><code>size_resolution_assert</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L118" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>size_resolution_assert</code>(<strong><code>size</code></strong>, <strong><code>resolution</code></strong>)</p>
+<h4 id="size_resolution_assert" class="doc_header"><code>size_resolution_assert</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L118" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>size_resolution_assert</code>(<strong><code>size</code></strong>, <strong><code>resolution</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -511,8 +609,11 @@ _shape: None</pre>
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="rasterize" class="doc_header"><code>rasterize</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L124" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>rasterize</code>(<strong><code>x</code></strong>, <strong><code>value_key</code></strong>=<em><code>None</code></em>, <strong><code>region</code></strong>=<em><code>None</code></em>, <strong><code>merge_alg</code></strong>=<em><code>'replace'</code></em>)</p>
+<h4 id="rasterize" class="doc_header"><code>rasterize</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L124" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>rasterize</code>(<strong><code>x</code></strong>, <strong><code>value_key</code></strong>=<em><code>None</code></em>, <strong><code>region</code></strong>=<em><code>None</code></em>, <strong><code>merge_alg</code></strong>=<em><code>'replace'</code></em>)</p>
 </blockquote>
 <p>Rasterize shapefile</p>
 
@@ -536,8 +637,11 @@ _shape: None</pre>
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="downsample" class="doc_header"><code>downsample</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L135" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>downsample</code>(<strong><code>x</code></strong>, <strong><code>src_tfm</code></strong>=<em><code>None</code></em>, <strong><code>dst_tfm</code></strong>=<em><code>None</code></em>, <strong><code>dst_shape</code></strong>=<em><code>None</code></em>, <strong><code>src_crs</code></strong>=<em><code>{'init': 'EPSG:4326'}</code></em>, <strong><code>dst_crs</code></strong>=<em><code>{'init': 'EPSG:4326'}</code></em>, <strong><code>resampling</code></strong>=<em><code>'average'</code></em>)</p>
+<h4 id="downsample" class="doc_header"><code>downsample</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L135" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>downsample</code>(<strong><code>x</code></strong>, <strong><code>src_tfm</code></strong>=<em><code>None</code></em>, <strong><code>dst_tfm</code></strong>=<em><code>None</code></em>, <strong><code>dst_shape</code></strong>=<em><code>None</code></em>, <strong><code>src_crs</code></strong>=<em><code>{'init': 'EPSG:4326'}</code></em>, <strong><code>dst_crs</code></strong>=<em><code>{'init': 'EPSG:4326'}</code></em>, <strong><code>resampling</code></strong>=<em><code>'average'</code></em>)</p>
 </blockquote>
 <p>Donwsample a numpy array x</p>
 
@@ -561,8 +665,11 @@ _shape: None</pre>
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="is_intersection" class="doc_header"><code>is_intersection</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L150" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>is_intersection</code>(<strong><code>gdf1</code></strong>, <strong><code>gdf2</code></strong>)</p>
+<h4 id="is_intersection" class="doc_header"><code>is_intersection</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L150" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>is_intersection</code>(<strong><code>gdf1</code></strong>, <strong><code>gdf2</code></strong>)</p>
 </blockquote>
 <p>Find the intersection between two geo pandas dataframes</p>
 
@@ -586,8 +693,11 @@ _shape: None</pre>
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="polygon_from_bounds" class="doc_header"><code>polygon_from_bounds</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L154" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>polygon_from_bounds</code>(<strong><code>bounds</code></strong>, <strong><code>to_GeoDataFrame</code></strong>=<em><code>False</code></em>, <strong><code>crs</code></strong>=<em><code>{'init': 'EPSG:4326'}</code></em>)</p>
+<h4 id="polygon_from_bounds" class="doc_header"><code>polygon_from_bounds</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L154" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>polygon_from_bounds</code>(<strong><code>bounds</code></strong>, <strong><code>to_GeoDataFrame</code></strong>=<em><code>False</code></em>, <strong><code>crs</code></strong>=<em><code>{'init': 'EPSG:4326'}</code></em>)</p>
 </blockquote>
 <p>Create a polygon object from bounds</p>
 
@@ -611,8 +721,11 @@ _shape: None</pre>
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="crop" class="doc_header"><code>crop</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L161" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>crop</code>(<strong><code>x</code></strong>, <strong><code>bounds</code></strong>=<em><code>None</code></em>, <strong><code>shape</code></strong>=<em><code>None</code></em>, <strong><code>crop</code></strong>=<em><code>True</code></em>)</p>
+<h4 id="crop" class="doc_header"><code>crop</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L161" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>crop</code>(<strong><code>x</code></strong>, <strong><code>bounds</code></strong>=<em><code>None</code></em>, <strong><code>shape</code></strong>=<em><code>None</code></em>, <strong><code>crop</code></strong>=<em><code>True</code></em>)</p>
 </blockquote>
 <p>Crop rasterio dataset for a region defined by bounds.
     x is a dataset or a list of datasets (rasterio.open).
@@ -639,8 +752,11 @@ _shape: None</pre>
 <div class="output_area">
 
 
+
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="bounds_from_coords" class="doc_header"><code>bounds_from_coords</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L177" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>bounds_from_coords</code>(<strong><code>lon</code></strong>, <strong><code>lat</code></strong>)</p>
+<h4 id="bounds_from_coords" class="doc_header"><code>bounds_from_coords</code><a href="https://github.com/mnpinto/banet/tree/master/banet/geo.py#L177" class="source_link" style="float:right">[source]</a></h4>
+<blockquote>
+<p><code>bounds_from_coords</code>(<strong><code>lon</code></strong>, <strong><code>lat</code></strong>)</p>
 </blockquote>
 <p>Compute bounds list form lon lat coords</p>
 
@@ -662,5 +778,5 @@ _shape: None</pre>
     {% endraw %}
 
 </div>
- 
+
 
